@@ -30,7 +30,7 @@ const AdminSchema = mongoose.Schema(
       type: String,
       required: [true, "Please enter Public Id for Image"],
     },
-    admin_id: {
+    user_id: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "user",
       required: true,

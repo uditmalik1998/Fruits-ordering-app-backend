@@ -11,8 +11,8 @@ const uploadItems = async (req, res) => {
   const public_id = req.file.filename?.split("/")?.[1];
   const img_url = req.file.path;
   const user_id = req.user.id;
-  //   console.log(req.user);
-  //     await AdminSchema.deleteMany();
+  
+      // await AdminSchema.deleteMany(); 
   const admin = await AdminSchema.create({
     item_name,
     stock,
