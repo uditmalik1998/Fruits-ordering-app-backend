@@ -69,6 +69,7 @@ const getCart = async (req, res) => {
     okResponse(res, cartData);
   } catch (err) {
     console.log(err);
+    
     InternalServerError(res, err.message);
   }
 };
